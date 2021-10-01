@@ -1,0 +1,8 @@
+services:
+  static-web:
+    build: .
+    image: ghcr.io/famedirtyshit/static-web:dev
+    ports:
+      - "8080:80"
+    environment:
+      - NGINX_PORT=80
